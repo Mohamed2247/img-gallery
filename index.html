@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SnapGallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="gallery-container">
+    <div class="gallery-item">
+        <img src="image1.jpg" alt="Image 1" class="thumbnail" onclick="openLightbox('image1.jpg')">
+        <p class="caption">صورة 1</p>
+    </div>
+    <div class="gallery-item">
+        <img src="image2.jpg" alt="Image 2" class="thumbnail" onclick="openLightbox('image2.jpg')">
+        <p class="caption">صورة 2</p>
+    </div>
+    <div class="gallery-item">
+        <img src="image3.jpg" alt="Image 3" class="thumbnail" onclick="openLightbox('image3.jpg')">
+        <p class="caption">صورة 3</p>
+    </div>
+</div>
+
+<!-- Lightbox -->
+<div id="lightbox" class="lightbox" onclick="closeLightbox()">
+    <img id="lightbox-image" src="" alt="Large Image">
+    <span class="close-btn">&times;</span>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
